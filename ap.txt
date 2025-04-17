@@ -1,0 +1,114 @@
+===============================
+🧠 VIDEO CALLING APP PLANNING
+===============================
+
+📌 PROJECT NAME:
+VideoColl (Video Calling App)
+
+🎯 GOAL:
+Create a simple and functional video calling web application where users can:
+- Create a meeting room
+- Share a room ID
+- Join the meeting via the room ID
+- Start a real-time video call
+
+==================
+🧱 TECH STACK:
+==================
+
+📦 Backend:
+- Node.js
+- Express.js
+- Socket.IO (for real-time communication)
+- UUID (to generate unique room IDs)
+
+🎨 Frontend:
+- EJS (Templating engine)
+- Tailwind CSS (for UI styling)
+- HTML/CSS/JS (Vanilla)
+
+📹 WebRTC:
+- For peer-to-peer video communication
+
+=======================
+📁 FOLDER STRUCTURE:
+=======================
+
+video-coll-app/
+│
+├── public/
+│   ├── js/
+│   │   └── script.js
+│   └── css/
+│       └── style.css
+│
+├── views/
+│   ├── home.ejs
+│   └── room.ejs
+│
+├── routes/
+│   └── index.js
+│
+├── server.js
+├── package.json
+└── README.md
+
+==================
+✅ CORE FEATURES:
+==================
+
+1. Home Page
+   - Create Room button
+   - Join Room via ID
+   - Start Meeting button
+
+2. Room Page
+   - Display Local Video
+   - Display Remote Video
+   - Mute / Unmute
+   - End Call
+
+3. Socket Events
+   - Join room
+   - User connected
+   - User disconnected
+   - Signal exchange (via WebRTC)
+
+4. WebRTC Integration
+   - Media stream handling
+   - Peer connection setup
+   - ICE candidate exchange
+
+=========================
+📅 MVP MILESTONES:
+=========================
+
+✅ Week 1:
+- Set up Express server
+- Design home.ejs and routing
+- Implement room creation and navigation
+
+✅ Week 2:
+- Add Socket.IO for real-time
+- Setup WebRTC connection
+- Connect two users in a room
+
+✅ Week 3:
+- Add UI controls (Mute, End)
+- Handle user leave/disconnect
+- Polish UI with Tailwind
+
+🔜 Optional (Advanced):
+- Screen sharing
+- Chat while in call
+- Authentication
+- Room password
+
+====================
+🚀 FINAL NOTES:
+====================
+
+- Keep UI minimal and responsive
+- Use environment variables for PORTs
+- Secure room IDs (use UUIDs)
+- Add user-friendly error handling
